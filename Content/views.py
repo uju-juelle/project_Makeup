@@ -7,5 +7,5 @@ def home_page(request):
     return render(request, "Content/home.html", {"list_of_makeup": kits})
 
 
-def about_page(request):
-    return render(request, "Content/about.html")
+# def about_page(request):
+#     return render(request, "Content/about.html")

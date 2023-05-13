@@ -26,5 +26,5 @@ class cosmetics(models.Model):
     phone_number = models.BigIntegerField()
     passport = models.ImageField(upload_to="passport_pictures",default="default.jpg", blank=True, null=True) 
     
-    def __str__(self):
-        return self.name
+    # def __str__(self):
+    #     return self.name
