@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome Page</title>
+    <link rel="stylesheet", href="{% static 'Content/main.css' %}"
+</head>
+<body>
+    {% block here %}
+    <h1> DIFFERENT MAKEUP KITS</h1>
+{% for l in list_of_makeup %}
+<ol> <li> {{l}} - {{l.gender}} - {{l.colour}} - {{l.company}} <img height="200", width="100" src= "{{l.passport.url}}" alt=""> </li></ol>
+{% endfor %}
+{% endblock here %}
+</body>
+</html>
